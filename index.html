@@ -30,35 +30,32 @@
         <section id="main-content">
           <p>This Library is base on <a href="https://github.com/jjobes/SlideDateTimePicker">SlideDateTimePicker</a> and <a href="https://github.com/square/android-times-square">android-times-square</a>.</p>
 
-<p><img src="https://github.com/ACCoder/SlideCalendarTimePicker/blob/master/appworks/SlideCalendarTimePicker/screenshot1.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ACCoder/SlideCalendarTimePicker/master/appworks/SlideCalendarTimePicker/screenshot1.png" alt=""></p>
 
-<p><img src="https://github.com/ACCoder/SlideCalendarTimePicker/blob/master/appworks/SlideCalendarTimePicker/screenshot2.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ACCoder/SlideCalendarTimePicker/master/appworks/SlideCalendarTimePicker/screenshot2.png" alt=""></p>
 
 <p>Setup</p>
 
-<p><code>
-dependencies {
+<p>dependencies {
     compile project(':library')
-}
-</code></p>
+}</p>
 
-<p>How to Use
-<code>
-final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
+<p>How to Use</p>
+
+<p>final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
                 .setInitialDate(new Date())
                 .setMaxDate(maxDate)
                 .setMinDate(minDate)
                 .setIs24HourTime(true)
                 .setIndicatorColor(getResources().getColor(android.R.color.holo_green_light))
                 .setListener(new SlideDateTimeListener() {
-                    @Override
+                    <a href="https://github.com/Override" class="user-mention">@Override</a>
                     public void onDateTimeSet(Date date) {
                         String time = format(date);
                         Toast.makeText(getApplicationContext(), time, Toast.LENGTH_LONG).show();
                     }
                 }).build();
-        picker.show();
-</code></p>
+        picker.show();</p>
         </section>
 
         <aside id="sidebar">
