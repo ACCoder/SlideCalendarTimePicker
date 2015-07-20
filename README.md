@@ -4,17 +4,18 @@ This Library is base on [SlideDateTimePicker](https://github.com/jjobes/SlideDat
 
 ![](https://raw.githubusercontent.com/ACCoder/SlideCalendarTimePicker/master/appworks/SlideCalendarTimePicker/screenshot2.png)
 
-Setup
+### Setup
 
-`
+`       
 dependencies {
     compile project(':library')
 }
 `
 
-How to Use
+### How to Use
 
-`final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
+`       
+final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
                 .setInitialDate(new Date())
                 .setMaxDate(maxDate)
                 .setMinDate(minDate)
