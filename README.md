@@ -6,15 +6,15 @@ This Library is base on [SlideDateTimePicker](https://github.com/jjobes/SlideDat
 
 ### Setup
 
-`       
+``       
 dependencies {
     compile project(':library')
 }
-`
+``
 
 ### How to Use
 
-`       
+``       
 final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
                 .setInitialDate(new Date())
                 .setMaxDate(maxDate)
@@ -29,4 +29,4 @@ final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSu
                     }
                 }).build();
         picker.show();
-    `
+    ``
