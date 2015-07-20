@@ -37,27 +37,27 @@
 <h3>
 <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h3>
 
-<p>dependencies {
-    compile project(':library')
-}</p>
+<div class="highlight highlight-java"><pre>    dependencies {
+        compile project(<span class="pl-s"><span class="pl-pds">'</span>:library<span class="pl-pds">'</span></span>)
+    }</pre></div>
 
 <h3>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Use</h3>
 
-<p>final SlideCalendarTimePicker picker = new SlideCalendarTimePicker.Builder(getSupportFragmentManager())
-                .setInitialDate(new Date())
-                .setMaxDate(maxDate)
-                .setMinDate(minDate)
-                .setIs24HourTime(true)
-                .setIndicatorColor(getResources().getColor(android.R.color.holo_green_light))
-                .setListener(new SlideDateTimeListener() {
-                    <a href="https://github.com/Override" class="user-mention">@Override</a>
-                    public void onDateTimeSet(Date date) {
-                        String time = format(date);
-                        Toast.makeText(getApplicationContext(), time, Toast.LENGTH_LONG).show();
-                    }
-                }).build();
-        picker.show();</p>
+<div class="highlight highlight-java"><pre>    <span class="pl-k">final</span> <span class="pl-smi">SlideCalendarTimePicker</span> picker <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">SlideCalendarTimePicker</span>.<span class="pl-smi">Builder</span>(getSupportFragmentManager())
+                    .setInitialDate(<span class="pl-k">new</span> <span class="pl-smi">Date</span>())
+                    .setMaxDate(maxDate)
+                    .setMinDate(minDate)
+                    .setIs24HourTime(<span class="pl-c1">true</span>)
+                    .setIndicatorColor(getResources()<span class="pl-k">.</span>getColor(<span class="pl-smi">android<span class="pl-k">.</span>R</span><span class="pl-k">.</span>color<span class="pl-k">.</span>holo_green_light))
+                    .setListener(<span class="pl-k">new</span> <span class="pl-smi">SlideDateTimeListener</span>() {
+                        <span class="pl-k">@Override</span>
+                        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onDateTimeSet</span>(<span class="pl-smi">Date</span> <span class="pl-v">date</span>) {
+                            <span class="pl-smi">String</span> time <span class="pl-k">=</span> format(date);
+                            <span class="pl-smi">Toast</span><span class="pl-k">.</span>makeText(getApplicationContext(), time, <span class="pl-smi">Toast</span><span class="pl-c1"><span class="pl-k">.</span>LENGTH_LONG</span>)<span class="pl-k">.</span>show();
+                        }
+                    })<span class="pl-k">.</span>build();
+            picker<span class="pl-k">.</span>show();</pre></div>
         </section>
 
         <aside id="sidebar">
