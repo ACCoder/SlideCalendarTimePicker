@@ -1,5 +1,8 @@
 package net.angrycode.utils;
 
+import android.os.Bundle;
+import android.text.TextUtils;
+
 import java.io.UnsupportedEncodingException;
 import java.security.Key;
 import java.security.KeyFactory;
@@ -15,16 +18,13 @@ import java.util.TreeMap;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import android.os.Bundle;
-import android.text.TextUtils;
-
 /**
  * 加密方式工具类
  * 
  * @author asus1
  * 
  */
-public class EncryUtil {
+public class EncryUtils {
 	/**
 	 * 加密Map集合中的数据，先将参数中Map集合改成TreeMap在拼成key=value形式后加密
 	 * @param map

@@ -30,7 +30,7 @@ import java.util.regex.Pattern;
  * @author zhe.yangz
  *
  */
-public final class StringUtil {
+public final class StringUtils {
     public static final String TAG = "StringUtil";
 
     public static final String CHARSET_NAME_UTF8        = "UTF-8";
@@ -47,7 +47,7 @@ public final class StringUtil {
     );
     public static final String EMPTY_STRING = "";
 
-    private StringUtil() {
+    private StringUtils() {
     }
 
     public static String format(Date date) {

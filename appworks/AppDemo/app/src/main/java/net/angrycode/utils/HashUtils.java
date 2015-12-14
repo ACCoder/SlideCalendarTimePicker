@@ -13,19 +13,20 @@
  */
 package net.angrycode.utils;
 
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
 /**
  *  
  * @author zhe.yangz 2012-3-31 下午02:44:07
  */
-public class HashUtil {
+public class HashUtils {
 
     /**
      * 
@@ -71,7 +72,7 @@ public class HashUtil {
         }
         try {
             for (String data : datas) {
-                mac.update(data.getBytes(StringUtil.CHARSET_NAME_UTF8));
+                mac.update(data.getBytes(StringUtils.CHARSET_NAME_UTF8));
             }
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e.getMessage(), e);
@@ -93,7 +94,7 @@ public class HashUtil {
         }
         try {
             for (String data : datas) {
-                mac.update(data.getBytes(StringUtil.CHARSET_NAME_UTF8));
+                mac.update(data.getBytes(StringUtils.CHARSET_NAME_UTF8));
             }
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e.getMessage(), e);

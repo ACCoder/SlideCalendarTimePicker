@@ -24,7 +24,7 @@ import java.util.Locale;
  *
  * @author zhe.yangz
  */
-public class NumberUtil {
+public class NumberUtils {
 
     /**
      * 使数字按最小保留小数位数格式化,3个为一组添加逗号
@@ -48,5 +48,5 @@ public class NumberUtil {
         return nbf.format(num);
     }
 
-    private NumberUtil() {}
+    private NumberUtils() {}
 }

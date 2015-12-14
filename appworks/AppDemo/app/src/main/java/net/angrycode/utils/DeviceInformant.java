@@ -48,14 +48,14 @@ public class DeviceInformant {
 
 	public DeviceInformant(Context context) {
 	    try {
-	        clientName = "Alibaba.Android";
+	        clientName = "AngryCode.Android";
 	        osSystem = "Android";
             osSystemVer = Build.VERSION.RELEASE;
             deviceMode = Build.MODEL;
             romVer = Build.FINGERPRINT;
             
     		version = AppUtils.getVersionName(context);
-    		deviceID = AndroidUtil.getDeviceId(context);
+    		deviceID = PhoneUtils.getDeviceId(context);
     		appVerCode = AppUtils.getVersionCode(context);
     		screenWidth = context.getResources().getDisplayMetrics().widthPixels;
     		screenHeight = context.getResources().getDisplayMetrics().heightPixels;
@@ -94,4 +94,6 @@ public class DeviceInformant {
 
 		return paramMap;
 	}
+
+
 }

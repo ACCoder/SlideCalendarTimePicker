@@ -23,7 +23,7 @@ import java.io.File;
  *
  * @author zhe.yangz
  */
-public class FileUtil {
+public class FileUtils {
 
     /**
      *
@@ -57,7 +57,7 @@ public class FileUtil {
      */
     public static double getFileSizeMB(File dir) {
         double mb = getFileSize(dir) / 1024. / 1024.;
-        return Double.parseDouble(NumberUtil.fractionDigits(mb, 2));
+        return Double.parseDouble(NumberUtils.fractionDigits(mb, 2));
     }
 
     /**

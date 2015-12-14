@@ -26,7 +26,7 @@ import java.util.Date;
  *
  * @author zhe.yangz
  */
-public class DateUtil {
+public class DateUtils {
     /**
      *
      * @param milliseconds 毫秒数
